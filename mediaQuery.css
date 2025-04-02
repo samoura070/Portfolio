@@ -1,0 +1,42 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 7rem;
+  }
+  .profile {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+  }
+  .profile img,
+  #experience img,
+  #experience img {
+    width: auto;
+    height: 43vw;
+  }
+  #experience .boxing {
+    flex-wrap: wrap;
+  }
+  #about .box {
+    flex-wrap: wrap;
+  }
+  #contact .info {
+    flex-direction: column;
+  }
+  #contact .info {
+    padding: 2rem 1rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+  footer p {
+    width: 70%;
+  }
+}

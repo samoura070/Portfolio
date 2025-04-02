@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQuery.css" />
+  </head>
+  <body>
+    <nav class="desktop-nav">
+      <div class="logo"><h1>Samira</h1></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="mobile-nav">
+      <div class="logo"><h1>Samira</h1></div>
+      <div class="mobile-side">
+        <div class="icons" onclick="{toggleMenu()}">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-links">
+          <ul>
+            <li><a href="#about" onclick="{toggleMenu()}">About</a></li>
+            <li>
+              <a href="#experience" onclick="{toggleMenu()}">Experience</a>
+            </li>
+            <li><a href="#contact" onclick="{toggleMenu()}">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="profile">
+        <img src="./assets/profile.svg" alt="programmer" />
+        <div class="desc">
+          <p class="text1">Hello, I'm</p>
+          <h1>Samira Ouarssas</h1>
+          <p class="text2">Frontend Developer</p>
+          <div class="btn-container">
+            <button class="btn-d" onclick="window.open(`./assets/resume.pdf`)">
+              Download CV
+            </button>
+            <button class="btn-i" onclick="location.href=`./#contact`">
+              Contact Info
+            </button>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/samira-ouarssas-a40891320/">
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/samoura070?tab=repositories">
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1><span>Know more</span>About me</h1>
+      <div class="conatiner">
+        <div class="box">
+          <div class="box1">
+            <i class="fa-solid fa-briefcase" style="color: #000000"></i>
+            <h2>Experience</h2>
+            <p>
+              Built high-converting landing pages for various products,
+              improving user engagement and conversion rates.
+            </p>
+            <span>(2 years)</span>
+          </div>
+          <div class="box1">
+            <i class="fa-solid fa-user-graduate" style="color: #000000"></i>
+            <h2>Education</h2>
+            <p>
+              Bachlors degree in Network Administration and Information Systems
+              Security Faculty of Sciences
+            </p>
+            <span> Tetouan, Morocco (2018/2019)</span>
+          </div>
+        </div>
+        <p id="paragraph">
+          I am highly motivated to grow as a front-end developer, bringing a
+          blend of technical knowledge and web marketing experience. My
+          adaptability, problem-solving skills, and commitment to high-quality
+          web solutions make me a strong candidate. I thrive in collaborative
+          environments and am eager to contribute my expertise while learning
+          from experienced professionals.
+        </p>
+      </div>
+    </section>
+    <section id="experience">
+      <h1><span>Explore my</span>Experience</h1>
+      <div class="boxing">
+        <div class="container">
+          <h2>Frontend Development</h2>
+          <div class="box">
+            <article>
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <h3>Sass</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <h3>React</h3>
+                <p>Learning...</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <h3>Material UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <img src="./assets/languages.svg" alt="experience" />
+      </div>
+    </section>
+   
+    </section>
+    <section id="contact">
+      <h1><span>Get in touch</span>Contact me</h1>
+      <div class="info">
+        <div class="detail">
+          <i class="fa-solid fa-envelope" style="color: #000000"></i>
+          <p>
+            <a href="mailto:someone@example.com">samiraabrar070@gmail.com</a>
+          </p>
+        </div>
+        <div class="detail">
+          <i class="fa-solid fa-phone" style="color: #000000"></i>
+          <p>+44 7440 357642</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p>
+        Copyright <i class="fa-solid fa-copyright"></i> 2025 Samira Ouarssas.
+        All rights reserved
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
